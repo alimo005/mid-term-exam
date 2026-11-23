@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:background="#FAF8F5">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:contentDescription="Artwork Image"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/image_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 / 6"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/titel_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artwork Title"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#292929"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/image_art"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist Name (Year)"
+            android:textSize="17sp"
+            android:textColor="#625A54"
+            android:layout_marginBottom="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:backgroundTint="#DED9D2"
+                android:textColor="#514943"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:backgroundTint="#98462F"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="6dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

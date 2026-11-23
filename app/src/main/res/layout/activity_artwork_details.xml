@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F5"
+    android:fillViewport="true"
+    tools:context=".ArtworkDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Screen Title -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artwork Details"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#292929"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Artwork Image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="Artwork Image"/>
+
+        <!-- Artwork Title -->
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="#292929"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/artist_name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#625A54"
+            android:textSize="18sp" />
+
+        <!-- Creation Year -->
+        <TextView
+            android:id="@+id/Year_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:textColor="#625A54"
+            android:textSize="17sp" />
+
+        <!-- Visit Website Button -->
+        <Button
+            android:id="@+id/website_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Visit Website"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#98462F"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Back to Gallery"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#514943"
+            android:backgroundTint="#DED9D2"/>
+
+    </LinearLayout>
+
+</ScrollView>
