@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             "Leonardo da Vinci"
     };
 
-    // Creation Years Array
     private final String[] mYears = {
             "1889",
             "1831",
@@ -96,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-// Click on Artwork Image
         Image.setOnClickListener(v -> {
 
             // Create Explicit Intent
@@ -105,17 +103,14 @@ public class MainActivity extends AppCompatActivity {
                     ArtworkDetailsActivity.class
             );
 
-            // Send Artwork Information
             intent.putExtra("title", Titles[CurrentIndex]);
 
             intent.putExtra("artist", Artists[CurrentIndex]);
 
             intent.putExtra("year", mYears[CurrentIndex]);
 
-            // Send Artwork Image
             intent.putExtra("imageResId", Images[CurrentIndex]);
 
-            // Open Second Activity
             startActivity(intent);
 
         });
@@ -139,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
                 (CurrentIndex + 1) + " / " + Images.length
         );
 
-        // Disable and Enable Buttons
         BtnPrevious.setEnabled(CurrentIndex > 0);
 
         BtnNext.setEnabled(CurrentIndex < Images.length - 1);

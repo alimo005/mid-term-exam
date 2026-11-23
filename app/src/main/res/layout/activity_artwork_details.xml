@@ -15,7 +15,6 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Screen Title -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -28,7 +27,6 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="25dp"/>
 
-        <!-- Artwork Image -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -38,7 +36,6 @@
             android:scaleType="fitCenter"
             android:contentDescription="Artwork Image"/>
 
-        <!-- Artwork Title -->
         <TextView
             android:id="@+id/name_textView"
             android:layout_width="match_parent"
@@ -49,7 +46,6 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <!-- Artist Name -->
         <TextView
             android:id="@+id/artist_name_textView"
             android:layout_width="match_parent"
@@ -58,7 +54,6 @@
             android:textColor="#625A54"
             android:textSize="18sp" />
 
-        <!-- Creation Year -->
         <TextView
             android:id="@+id/Year_textView"
             android:layout_width="match_parent"
@@ -67,7 +62,6 @@
             android:textColor="#625A54"
             android:textSize="17sp" />
 
-        <!-- Visit Website Button -->
         <Button
             android:id="@+id/website_button"
             android:layout_width="match_parent"
@@ -80,7 +74,6 @@
             android:backgroundTint="#98462F"
             android:layout_marginBottom="12dp"/>
 
-        <!-- Back Button -->
         <Button
             android:id="@+id/back_button"
             android:layout_width="match_parent"
